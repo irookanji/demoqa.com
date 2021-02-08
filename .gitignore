@@ -1,0 +1,12 @@
+build
+.idea
+.gradle
+out
+*.ipr
+*.iws
+gradlew
+gradlew.bat
+gradle/wrapper
+debug.log
+credentials.properties
+.allure/
