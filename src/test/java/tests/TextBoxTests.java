@@ -5,8 +5,7 @@ import io.qameta.allure.Allure;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Condition.cssClass;
-import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
@@ -24,6 +23,7 @@ public class TextBoxTests {
                     final String url = "https://demoqa.com/text-box";
                     open(url);
                     Allure.link("Testing", url);
+                    $("img[src='/images/Toolsqa.jpg']").should(exist);
                 });
 
         step("Fill the forms", () -> {
@@ -54,6 +54,7 @@ public class TextBoxTests {
             final String url = "https://demoqa.com/text-box";
             open(url);
             Allure.link("Testing", url);
+            $("img[src='/images/Toolsqa.jpg']").should(exist);
         });
 
         step("Fill the forms", () -> {
@@ -92,6 +93,7 @@ public class TextBoxTests {
             final String url = "https://demoqa.com/text-box";
             open(url);
             Allure.link("Testing", url);
+            $("img[src='/images/Toolsqa.jpg']").should(exist);
         });
 
         step("Fill the forms with unexpected email", () -> {
